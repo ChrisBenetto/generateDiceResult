@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function getRandomIntInclusive(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min +1)) + min;
+            }
+
+            let dropResult = [];
+
+            let numberDice = Number(prompt("Veuillez saisir un nombre de lancer de dés : "));
+            for ( let i = 0 ; i < numberDice ; i++){
+                let diceResult = getRandomIntInclusive(1,6);
+                dropResult.push(diceResult);
+            }
+
+            dropResult.sort();
+            console.log("Voici vos résultats de lancer : " + dropResult);
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
